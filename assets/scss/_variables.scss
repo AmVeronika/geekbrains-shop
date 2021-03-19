@@ -1,0 +1,53 @@
+//COLORS 
+$white: #FFFFFF;
+$black: #000000;
+$bittersweet: #F16D7F;
+$snow: #FBFBFB;
+$zambezi: #5D5D5D;
+$matterhorn: #575757;
+$dimgray: #6F6E6E;
+$whisper: #E8E8E8;
+$nobel: #9F9F9F;
+
+// FONTS 
+$fontfamily_main: 'Lato';
+$fontfamily_mainweight: (
+    light: 300,
+    regular:400,
+    semibold:700,
+    bold:900,
+);
+
+$fontsize: (
+    h1: 48px,
+    h2: 30px,
+    h3: 24px,
+    h4: 18px,
+    h5: 16px,
+    p: 14px,
+    small: 11px,
+);
+
+
+// Исправить значения на переменные
+@mixin fontstyle ($fw: 300, $fs: 14px, $lh: 16px, $tt: normal) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-transform: $tt;
+}
+
+
+// WIDTH
+$desktopwidth: 1140px;
+$tabletwidth: 768px;
+$mobiletwidth: 375px;
+
+// MEDIA
+$level_1: 1300px;
+$level_2: 1100px;
+$level_3: 950px;
+$level_4: 800px;
+$level_5: 750px;
+$level_6: 600px;
+$level_7: 310px;
