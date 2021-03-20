@@ -78,12 +78,14 @@ h6 {
 }
 
 /*--------------------*/
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* .featur-item__h4 {
+   @include fontstyle(semibold, h4, cap);
 }
 
+.featur-item__text {
+   @include fontstyle(regular, 0, cap);
+   font-size: 15px;
+} */
 .header {
   background: #000000;
 }
@@ -119,7 +121,7 @@ h6 {
 }
 
 .promo {
-  background: #F1E4E6;
+  background: #f1e4e6;
 }
 
 .promo .promo__wrap {
@@ -134,4 +136,44 @@ h6 {
           align-items: center;
   min-height: 764px;
   background: url(../assets/img/main/promo-background.png) -60% bottom no-repeat;
+}
+
+.featur-item__h1 {
+  font-size: 48px;
+}
+
+.featur-item__h2 {
+  font-size: 30px;
+}
+
+.featur-item__h3 {
+  font-size: 24px;
+}
+
+.featur-item__h4 {
+  font-size: 18px;
+}
+
+.featur-item__h5 {
+  font-size: 16px;
+}
+
+.featur-item__text {
+  font-size: 14px;
+}
+
+.featur-item__small {
+  font-size: 11px;
+}
+
+.featur-item__h4 {
+  font-weight: 700;
+  font-size: 18px;
+  font-size: capitalize;
+}
+
+.featur-item__text {
+  font-weight: 400;
+  font-size: capitalize;
+  font-size: 15px;
 }
