@@ -11,6 +11,13 @@ section
 					product-card__text
 					product-card__pink
 				product__button
+header
+	header__wrap
+			header__right
+			header__left
+				header-left__logo
+				header-left__img
+
 
 								
 					

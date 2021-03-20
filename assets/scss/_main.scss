@@ -1,11 +1,32 @@
 // Promo logo
 .promo {
-   background: #F1E4E6;
+   background: #f1e4e6;
    .promo__wrap {
       display: flex;
-      justify-content:flex-end;
+      justify-content: flex-end;
       align-items: center;
       min-height: 764px;
       background: url(../assets/img/main/promo-background.png) -60% bottom no-repeat;
    }
+}
+
+// center content
+// center content
+
+// Features
+.featur-item {
+   @each $font, $size in $fontsize {
+      &__#{$font} {
+         font-size: $size;
+      }
+   }
+}
+
+.featur-item__h4 {
+   @include fontstyle(semibold, h4, cap);
+}
+
+.featur-item__text {
+   @include fontstyle(regular, 0, cap);
+   font-size: 15px;
 }
