@@ -10,6 +10,8 @@ $whisper: #e8e8e8;
 $nobel: #9f9f9f;
 
 // FONTS
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+
 $fontfamily_main: "Lato";
 $fontfamily_mainweight: (
    light: 300,
@@ -17,6 +19,10 @@ $fontfamily_mainweight: (
    semibold: 700,
    bold: 900,
 );
+
+body {
+   font-family: $fontfamily_main;
+}
 
 $fontsize: (
    h1: 48px,
@@ -49,7 +55,7 @@ $texttransform: (
          + "Please make sure it is defined in `$breakpoints` map.";
    }
    @if map-has-key($texttransform, $tt) {
-      font-size: #{map-get($texttransform, $tt)};
+      text-transform: #{map-get($texttransform, $tt)};
    } @else {
       @warn "Unfortunately, no value could be retrieved from `#{$tt}`. "
          + "Please make sure it is defined in `$breakpoints` map.";
@@ -58,17 +64,31 @@ $texttransform: (
 
 // Example
 
-/* .featur-item__h4 {
-   @include fontstyle(semibold, h4, cap);
-}
+//  .featur-item__h4 {
+//    @include fontstyle(semibold, h4, cap);
+// }
 
-.featur-item__text {
-   @include fontstyle(regular, 0, cap);
-   font-size: 15px;
-} */
+// .featur-item__text {
+//    @include fontstyle(regular, 0, cap);
+//    font-size: 15px;
+// }
+
+// .featur-item {
+//    @each $font, $size in $fontsize {
+//       &__#{$font} {
+//          font-size: $size;
+//       }
+//    }
+// }
 
 // WIDTH
 $desktopwidth: 1140px;
+
+.container {
+   max-width: $desktopwidth + 30px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
 
 // MEDIA
 $level_1: 1300px;
