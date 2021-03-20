@@ -39,6 +39,12 @@ $fontsize: (
 // WIDTH
 $desktopwidth: 1140px;
 
+.container {
+   max-width: $desktopwidth + 30px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
 // MEDIA
 $level_1: 1300px;
 $level_2: 1100px;

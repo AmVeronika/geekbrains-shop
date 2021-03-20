@@ -1,0 +1,21 @@
+// header 
+.header {
+   background: $black;
+   &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+   }
+   // left container 
+   &__left {
+      width: 111px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   // right container
+   &-right__account {
+         margin: 0 33px;
+      }
+}

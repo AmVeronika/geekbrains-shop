@@ -1,0 +1,11 @@
+// Promo logo
+.promo {
+   background: #F1E4E6;
+   .promo__wrap {
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      min-height: 764px;
+      background: url(../assets/img/main/promo-background.png) -60% bottom no-repeat;
+   }
+}
