@@ -167,21 +167,6 @@ body {
   width: 12px;
   height: 86px;
   background: #f16d7f;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-@media (min-width: 768px) {
-  .promo .promo__wrap:hover .promo__h1::before {
-    content: "";
-    position: absolute;
-    left: -28px;
-    bottom: -20px;
-    display: block;
-    width: 420px;
-    height: 10px;
-    background: #f16d7f;
-  }
 }
 
 .promo__span {

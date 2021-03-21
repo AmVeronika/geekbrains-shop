@@ -23,21 +23,8 @@
       width: 12px;
       height: 86px;
       background: $bittersweet;
-      transition: 0.8s;
    }
-   @media (min-width: $level_5) {
-      .promo__wrap:hover .promo__h1::before {
-         content: "";
-         position: absolute;
-         left: -28px;
-         bottom: -20px;
-         display: block;
-         width: 420px;
-         height: 10px;
-         background: $bittersweet;
-      }
-   }
-
+ 
    &__span {
       @include fontstyle(semibold, 0, cap);
       font-size: 32px;
