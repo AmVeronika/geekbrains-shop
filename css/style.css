@@ -356,17 +356,11 @@ body {
   border: 1px solid #f16d7f;
 }
 
-.featur-item__h4 {
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-.featur-item__h4 .feature, .featur-item__h4 .footer {
+.feature, .footer {
   background: #222224;
 }
 
-.featur-item__h4 .feature__flex-wrap {
+.feature__flex-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +371,7 @@ body {
   padding: 103px 0;
 }
 
-.featur-item__h4 .feature__item {
+.feature__item {
   max-width: 28%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,7 +388,7 @@ body {
           align-items: center;
 }
 
-.featur-item__h4 .feature-item__h4 {
+.feature-item__h4 {
   font-weight: 700;
   text-transform: none;
   font-size: 20px;
@@ -402,7 +396,7 @@ body {
   padding: 25px 0 13px;
 }
 
-.featur-item__h4 .feature-item__text {
+.feature-item__text {
   font-weight: 400;
   font-size: 14px;
   text-transform: none;
@@ -410,12 +404,12 @@ body {
   color: #fbfbfb;
 }
 
-.featur-item__h4 .subscribe {
+.subscribe {
   background: url(../assets/img/header-footer/footer-background.jpg) bottom no-repeat;
   background-size: cover;
 }
 
-.featur-item__h4 .subscribe__wrap, .featur-item__h4 .subscribe__info {
+.subscribe__wrap, .subscribe__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +419,7 @@ body {
   padding: 100px 0 130px;
 }
 
-.featur-item__h4 .subscribe__info {
+.subscribe__info {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -438,42 +432,42 @@ body {
   padding: 0;
 }
 
-.featur-item__h4 .subscribe-info__img {
+.subscribe-info__img {
   border-radius: 100%;
   margin-bottom: 30px;
 }
 
-.featur-item__h4 .subscribe-info__h4 {
+.subscribe-info__h4 {
   font-weight: 400;
   text-transform: none;
   font-size: 20px;
   color: #222224;
 }
 
-.featur-item__h4 .subscribe-info__h4-span {
+.subscribe-info__h4-span {
   font-style: italic;
 }
 
-.featur-item__h4 .subscribe__form-wrap {
+.subscribe__form-wrap {
   margin-right: 100px;
   margin-top: 35px;
   text-align: center;
 }
 
-.featur-item__h4 .subscribe__h3 {
+.subscribe__h3 {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 40px;
 }
 
-.featur-item__h4 .subscribe__h4 {
+.subscribe__h4 {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.featur-item__h4 .subscribe__form {
+.subscribe__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,14 +477,14 @@ body {
   margin-top: 32px;
 }
 
-.featur-item__h4 .subscribe__input {
+.subscribe__input {
   padding: 16px 85px 16px 28px;
   border-radius: 23px 0 0 23px;
   background-color: #e1e1e1;
   border: 1px solid #e1e1e1;
 }
 
-.featur-item__h4 .subscribe__input::-webkit-input-placeholder {
+.subscribe__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -501,7 +495,7 @@ body {
   line-height: normal;
 }
 
-.featur-item__h4 .subscribe__input:-ms-input-placeholder {
+.subscribe__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -512,7 +506,7 @@ body {
   line-height: normal;
 }
 
-.featur-item__h4 .subscribe__input::-ms-input-placeholder {
+.subscribe__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -523,7 +517,7 @@ body {
   line-height: normal;
 }
 
-.featur-item__h4 .subscribe__input::placeholder {
+.subscribe__input::placeholder {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -534,7 +528,7 @@ body {
   line-height: normal;
 }
 
-.featur-item__h4 .subscribe__button {
+.subscribe__button {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
@@ -545,7 +539,7 @@ body {
   letter-spacing: 0.35px;
 }
 
-.featur-item__h4 .footer__wrap {
+.footer__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,14 +551,14 @@ body {
           align-items: center;
 }
 
-.featur-item__h4 .footer__h5 {
+.footer__h5 {
   font-weight: 400;
   font-size: 16px;
   text-transform: none;
   color: #fbfbfb;
 }
 
-.featur-item__h4 .footer__links {
+.footer__links {
   display: -ms-grid;
   display: grid;
   grid-gap: 7px;
@@ -574,7 +568,7 @@ body {
   padding: 23px 0;
 }
 
-.featur-item__h4 .footer-links__link {
+.footer-links__link {
   width: 32px;
   height: 32px;
   text-align: center;
