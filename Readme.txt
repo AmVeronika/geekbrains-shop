@@ -22,3 +22,7 @@ header
 								
 					
 
+header {
+	position:sticky;
+	top:0;
+}

@@ -12,7 +12,7 @@ $nobel: #9f9f9f;
 // FONTS
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 
-$fontfamily_main: "Lato";
+$fontfamily_main: "Lato", sans-serif;
 $fontfamily_mainweight: (
    light: 300,
    regular: 400,
@@ -72,7 +72,6 @@ $texttransform: (
 //    @include fontstyle(regular, 0, cap);
 //    font-size: 15px;
 // }
-
 // .featur-item {
 //    @each $font, $size in $fontsize {
 //       &__#{$font} {
