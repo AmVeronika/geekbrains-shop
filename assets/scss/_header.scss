@@ -1,4 +1,4 @@
-// header 
+// header
 .header {
    background: $black;
    &__wrap {
@@ -7,15 +7,22 @@
       align-items: center;
       height: 75px;
    }
-   // left container 
+   // left container
    &__left {
       width: 111px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
    }
+   &-left__search {
+      cursor: pointer;
+   }
    // right container
+
+   &-right__burgermenu {
+      cursor: pointer;
+   }
    &-right__account {
-         margin: 0 33px;
-      }
+      margin: 0 33px;
+   }
 }

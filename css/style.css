@@ -119,6 +119,14 @@ body {
           align-items: flex-end;
 }
 
+.header-left__search {
+  cursor: pointer;
+}
+
+.header-right__burgermenu {
+  cursor: pointer;
+}
+
 .header-right__account {
   margin: 0 33px;
 }
@@ -159,6 +167,21 @@ body {
   width: 12px;
   height: 86px;
   background: #f16d7f;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+@media (min-width: 768px) {
+  .promo .promo__wrap:hover .promo__h1::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    bottom: -20px;
+    display: block;
+    width: 420px;
+    height: 10px;
+    background: #f16d7f;
+  }
 }
 
 .promo__span {
@@ -274,7 +297,11 @@ body {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
-  background: #F8F8F8;
+  background: #f8f8f8;
+}
+
+.product-card__img {
+  cursor: pointer;
 }
 
 .product-card__name {

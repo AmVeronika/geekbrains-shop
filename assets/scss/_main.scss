@@ -23,7 +23,21 @@
       width: 12px;
       height: 86px;
       background: $bittersweet;
+      transition: 0.8s;
    }
+   @media (min-width: $level_5) {
+      .promo__wrap:hover .promo__h1::before {
+         content: "";
+         position: absolute;
+         left: -28px;
+         bottom: -20px;
+         display: block;
+         width: 420px;
+         height: 10px;
+         background: $bittersweet;
+      }
+   }
+
    &__span {
       @include fontstyle(semibold, 0, cap);
       font-size: 32px;
@@ -83,7 +97,7 @@
       margin-bottom: 95px;
    }
 
-// Title 
+   // Title
    &__h2 {
       @include fontstyle(regular, h2, cap);
       line-height: 36px;
@@ -93,7 +107,7 @@
       line-height: 17px;
       color: $nobel;
    }
-// Container with cart 
+   // Container with cart
    &__grid-wrap {
       display: grid;
       gap: 30px;
@@ -105,7 +119,10 @@
       grid-template-columns: 360px;
       grid-template-rows: 420px 1fr;
       @include fontstyle(regular, h4, upper);
-      background: #F8F8F8;
+      background: #f8f8f8;
+   }
+   &-card__img {
+      cursor: pointer;
    }
    &-card__name {
       text-decoration: none;
@@ -136,7 +153,7 @@
       padding: 0 29px 0 17px;
    }
 
-// Botton
+   // Botton
    &__button {
       display: inline-block;
       @include fontstyle(regular, h5, none);
