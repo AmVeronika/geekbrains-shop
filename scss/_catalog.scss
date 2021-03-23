@@ -46,13 +46,21 @@
       margin-top: 50px;
       padding-bottom: 30px;
    }
-   // Filter
-   &__filter {
-      text-align: left;
-      padding: 0 16px 13px 16px;
-      position: absolute;
-      top: 0;
-      background: #ffffff;
+   &-sidebar {
+      // Filter
+      &__filter {
+         text-align: left;
+         padding: 0 16px 13px 16px;
+         position: absolute;
+         top: 0;
+         background: #ffffff;
+      }
+      // Options
+      &__options {
+         grid-column-start: 2;
+         display: flex;
+         position: absolute;
+      }
    }
    &__details {
       display: none;
@@ -111,12 +119,6 @@
       display: block;
       line-height: 24px;
    }
-   // Options
-   &__options {
-      grid-column-start: 2;
-      display: flex;
-      position: absolute;
-   }
    &-options {
       &__details {
          & summary::-webkit-details-marker {
@@ -126,12 +128,12 @@
             list-style: none;
          }
          &[open] summary {
-            background: url("../assets/img/catalog/arrow.png") right center no-repeat;
+            background: url("../img/catalog/arrow.png") right center no-repeat;
             padding-right: 21px;
             margin-right: 28px;
          }
          & summary {
-            background: url("../assets/img/catalog/arrow.png") right center no-repeat;
+            background: url("../img/catalog/arrow.png") right center no-repeat;
             padding-right: 21px;
             margin-right: 28px;
          }

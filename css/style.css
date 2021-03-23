@@ -146,7 +146,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 764px;
-  background: url(../assets/img/main/promo-background.png) -215px bottom no-repeat;
+  background: url(../img/main/promo-background.png) -215px bottom no-repeat;
 }
 
 .promo__h1 {
@@ -193,19 +193,19 @@ body {
 }
 
 .categories__card1 {
-  background: url(../assets/img/main/categories-women.jpg);
+  background: url(../img/main/categories-women.jpg);
 }
 
 .categories__card2 {
-  background: url(../assets/img/main/categories-men.jpg);
+  background: url(../img/main/categories-men.jpg);
 }
 
 .categories__card3 {
-  background: url(../assets/img/main/categories-kids.jpg);
+  background: url(../img/main/categories-kids.jpg);
 }
 
 .categories__card4 {
-  background: url(../assets/img/main/categories-accesories.jpg);
+  background: url(../img/main/categories-accesories.jpg);
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -391,7 +391,7 @@ body {
 }
 
 .subscribe {
-  background: url(../assets/img/header-footer/footer-background.jpg) bottom no-repeat;
+  background: url(../img/header-footer/footer-background.jpg) bottom no-repeat;
   background-size: cover;
 }
 
@@ -525,45 +525,6 @@ body {
   letter-spacing: 0.35px;
 }
 
-.footer__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__h5 {
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: none;
-  color: #fbfbfb;
-}
-
-.footer__links {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 7px;
-  -ms-grid-columns: minmax(30px, 1fr) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  max-width: 50%;
-  padding: 23px 0;
-}
-
-.footer-links__link {
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  font-size: 15px;
-  line-height: 32px;
-  color: #000000;
-  background: #ffffff;
-}
-
 .arrivals {
   background-color: #f8f3f4;
   padding: 60px 0;
@@ -627,12 +588,21 @@ body {
   padding-bottom: 30px;
 }
 
-.product__filter {
+.product-sidebar__filter {
   text-align: left;
   padding: 0 16px 13px 16px;
   position: absolute;
   top: 0;
   background: #ffffff;
+}
+
+.product-sidebar__options {
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
 }
 
 .product__details {
@@ -704,15 +674,6 @@ body {
   line-height: 24px;
 }
 
-.product__options {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-}
-
 .product-options__details summary::-webkit-details-marker {
   display: none;
 }
@@ -722,13 +683,13 @@ body {
 }
 
 .product-options__details[open] summary {
-  background: url("../assets/img/catalog/arrow.png") right center no-repeat;
+  background: url("../img/catalog/arrow.png") right center no-repeat;
   padding-right: 21px;
   margin-right: 28px;
 }
 
 .product-options__details summary {
-  background: url("../assets/img/catalog/arrow.png") right center no-repeat;
+  background: url("../img/catalog/arrow.png") right center no-repeat;
   padding-right: 21px;
   margin-right: 28px;
 }
@@ -805,21 +766,10 @@ body {
 .fa-chevron-right {
   color: #000000;
 }
-
 .shopping {
   margin-top: 96px;
   margin-bottom: 128px;
 }
-
-.shopping__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .shopping__grid-wrap {
   display: -ms-grid;
   display: grid;
@@ -862,4 +812,43 @@ body {
   text-transform: capitalize;
   line-height: 16px;
   color: #B1B1B1;
+}
+
+.footer__wrap {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__h5 {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  color: #fbfbfb;
+}
+
+.footer__links {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 7px;
+  -ms-grid-columns: minmax(30px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  max-width: 50%;
+  padding: 23px 0;
+}
+
+.footer-links__link {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 32px;
+  color: #000000;
+  background: #ffffff;
 }
