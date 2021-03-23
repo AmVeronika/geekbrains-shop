@@ -805,3 +805,61 @@ body {
 .fa-chevron-right {
   color: #000000;
 }
+
+.shopping {
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+
+.shopping__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shopping__grid-wrap {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 40px;
+}
+
+.shopping__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 262px 262px 97px;
+      grid-template-columns: 262px 262px 97px;
+}
+
+.shopping__flex-wrap {
+  width: 360px;
+}
+
+.shopping__h5 {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.shopping-delivery__adress {
+  min-width: 100%;
+  border: 1px solid #A4A4A4;
+  padding: 13px 0 16px 18px;
+  margin-top: 20px;
+}
+
+.shopping-delivery__button {
+  display: block;
+  margin-top: 23px;
+}
+
+.shopping-delivery__adress-select {
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 16px;
+  color: #B1B1B1;
+}

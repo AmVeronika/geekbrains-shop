@@ -1,0 +1,44 @@
+.shopping {
+   margin-top: 96px;
+   margin-bottom: 128px;
+   &__wrap {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__grid-wrap {
+      display: grid;
+      row-gap: 40px;
+   }
+   // Left container 
+   // Cards product
+   &__card {
+      display: grid;
+      grid-template-columns: 262px 262px 97px;
+      
+   }
+
+   // Right container 
+   &__flex-wrap {
+      width: 360px;
+   }
+   &__h5 {
+      @include fontstyle(light, h5, upper);
+      line-height: 20px;
+   }
+   &-delivery__adress  {
+      min-width: 100%;
+      border: 1px solid #A4A4A4;
+      padding: 13px 0 16px 18px;
+      margin-top: 20px;
+   }
+   &-delivery__button {
+      display: block;
+      margin-top: 23px;
+   }
+
+   &-delivery__adress-select{
+   @include fontstyle(light, text, cap);
+   line-height: 16px;
+   color: #B1B1B1;
+}
+}
