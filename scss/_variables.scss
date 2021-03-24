@@ -24,14 +24,6 @@ body {
    font-family: $fontfamily_main;
 }
 
-section,
-article,
-header,
-footer,
-aside {
-   display: block;
-}
-
 $fontsize: (
    h1: 48px,
    h2: 30px,
@@ -105,3 +97,11 @@ $level_4: 800px;
 $level_5: 768px;
 $level_6: 600px;
 $level_7: 320px;
+
+section,
+article,
+header,
+footer,
+aside {
+   display: block;
+}

@@ -81,7 +81,7 @@
                   <p class="shopping-card__text">Price: <span class="shopping-card__text-color">$300</span></p>
                   <p class="shopping-card__text">Color: <span class="shopping-card__text-span">Red</span></p>
                   <p class="shopping-card__text">Size:<span class="shopping-card__text-span">Xl</span></p>
-                  <p class="shopping-card__text">Quantity: </p>
+                  <p class="shopping-card__text shopping-card__text-block">Quantity:</p>
                   <input class="shopping-card__input" type="number" name="quantity" id="cart-quantity" required min="1"
                      placeholder="2">
                </a>
@@ -101,7 +101,7 @@
                   <p class="shopping-card__text">Price: <span class="shopping-card__text-color">$300</span></p>
                   <p class="shopping-card__text">Color: <span class="shopping-card__text-span">Red</span></p>
                   <p class="shopping-card__text">Size:<span class="shopping-card__text-span">Xl</span></p>
-                  <p class="shopping-card__text">Quantity: </p>
+                  <p class="shopping-card__text shopping-card__text-block">Quantity: </p>
                   <input class="shopping-card__input" type="number" name="quantity" id="cart-quantity" required min="1"
                      placeholder="2">
                </a>
@@ -339,28 +339,31 @@
                   </select>
                </div>
                <!-- State ​​selection -->
-               <input type="text" class="shopping-delivery__adress shopping-delivery__indent" placeholder="State">
+               <input type="text" class="shopping-delivery__adress shopping-delivery__color" placeholder="State">
                <!-- Postcode -->
-               <input type="text" class="shopping-delivery__adress shopping-delivery__indent"
+               <input type="text" class="shopping-delivery__adress shopping-delivery__color"
                   placeholder="Postcode / Zip">
-               <a href="#" class="shopping-delivery__button shopping-delivery__indent">get a quote</a>
+               <button class="shopping-delivery__button" type="submit">get a quote</button>
             </div>
             <!-- Total cost  -->
             <div class="shopping__totalcost">
-               <p class="shopping__small">Sub total</p>
-               <p class="shopping__small">$900</p>
-               <h5 class="shopping__h5 shopping-totalcost__indent">GRAND TOTAL<span
-                     class="shopping__h5-collor">$900</span>
-               </h5>
-               <a href="#" class="shopping-totalcost__button">proceed to checkout</a>
+               <p class="shopping-totalcost__small shopping-totalcost__small-indent">Sub total</p>
+               <p class="shopping-totalcost__small">$900</p>
+               <br>
+               <h5 class="shopping-totalcost__h5 shopping-totalcost__indent">GRAND TOTAL</h5>
+               <h5 class="shopping-totalcost__h5 shopping-totalcost__h5-collor">$900</h5>
+               <div class="shopping__border"></div>
+               <button class="shopping-totalcost__button" type="submit">proceed to checkout</button>
             </div>
          </div>
+
+         <!-- Button cart -->
+         <article class="shopping__button">
+            <button class="shopping-button__left shopping-button__text" type="reset">CLEAR SHOPPING CART</button>
+            <a href="#" class="shopping-button__right shopping-button__text">CONTINUE SHOPPING</a>
+         </article>
       </fotm>
-      <!-- Button cart -->
-      <article class="shopping__button container">
-         <a href="#" class="shopping-button__left">CLEAR SHOPPING CART</a>
-         <a href="#" class="shopping-button__right">CONTINUE SHOPPING</a>
-      </article>
+
 
    </section> <!-- Shopping cart end -->
 
