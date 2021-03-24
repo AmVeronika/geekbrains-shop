@@ -993,6 +993,7 @@ aside {
   display: -ms-grid;
   display: grid;
   row-gap: 40px;
+  margin-right: 25px;
 }
 
 .shopping__card {
@@ -1002,6 +1003,8 @@ aside {
       grid-template-columns: 262px 262px 66px;
   -webkit-column-gap: 31px;
           column-gap: 31px;
+  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 }
 
 .shopping-name__h3 {
@@ -1010,6 +1013,7 @@ aside {
   text-transform: capitalize;
   line-height: 28px;
   color: #222222;
+  margin-bottom: 36px;
 }
 
 .shopping-card__text {
@@ -1018,6 +1022,7 @@ aside {
   font-size: 22px;
   line-height: 27px;
   color: #575757;
+  margin-top: 6px;
 }
 
 .shopping-card__text-block {
@@ -1028,40 +1033,31 @@ aside {
   color: #f16d7f;
 }
 
-.shopping-card__input::-webkit-input-placeholder {
+.shopping-card__input {
   font-weight: 400;
   font-size: 18px;
   text-transform: capitalize;
   line-height: 28px;
   color: #656565;
+  text-align: end;
+  width: 43px;
+  height: 24px;
+  border: 1px solid #EAEAEA;
+  margin-left: 24px;
 }
 
-.shopping-card__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 28px;
-  color: #656565;
+.shopping-card__close {
+  margin-left: 30px;
+  cursor: pointer;
 }
 
-.shopping-card__input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 28px;
-  color: #656565;
-}
-
-.shopping-card__input::placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 28px;
-  color: #656565;
+.shopping-card__name, .shopping-card__close {
+  margin-top: 22px;
 }
 
 .shopping__flex-wrap {
   width: 360px;
+  margin-top: 18px;
 }
 
 .shopping__h5 {
@@ -1078,6 +1074,15 @@ aside {
   margin-top: 20px;
 }
 
+.shopping-delivery__adress-select {
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 13px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+
 .shopping-delivery__color {
   color: #222222;
 }
@@ -1092,14 +1097,6 @@ aside {
   font-size: 14px;
   text-transform: capitalize;
   line-height: 16px;
-  color: #b1b1b1;
-}
-
-.shopping-delivery__adress-select {
-  font-weight: 300;
-  font-size: 11px;
-  text-transform: uppercase;
-  line-height: 13px;
   color: #b1b1b1;
 }
 
@@ -1171,7 +1168,7 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 652px;
+  max-width: 652px;
   margin-top: 72px;
 }
 
