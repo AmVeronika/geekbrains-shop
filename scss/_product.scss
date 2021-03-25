@@ -133,13 +133,19 @@
       }
       &__button {
          margin: 49px auto 0;
-         border: 1px solid #a4a4a4;
+         border: 1px solid $bittersweet;
          background: $white;
          display: flex;
          align-items: center;
          padding: 10px 46px;
-         &-span{
+         &-span {
             padding-left: 23px;
+            color: $bittersweet;
+         }
+         &-svg {
+            path {
+               fill: $bittersweet;
+            }
          }
       }
    }

@@ -101,7 +101,19 @@ $level_7: 320px;
 section,
 article,
 header,
+main,
 footer,
 aside {
    display: block;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+}
+
+.main {
+   flex-grow: 1;
 }
