@@ -17,7 +17,6 @@
       @include fontstyle(light, 0, none);
       font-size: 13px;
       line-height: 16px;
-      color: #b1b1b1;
       padding: 13px 0 14px 15px;
       border: 1px solid #a4a4a4;
       margin-top: 20px;
@@ -41,8 +40,8 @@
    &-form__button {
       @include fontstyle(regular, text, upper);
       line-height: 17px;
-      color: $white;
-      background: $bittersweet;
+      color: $bittersweet;
+      background: none;
       padding: 15px 28px;
       border: 1px solid $bittersweet;
    }
@@ -68,3 +67,5 @@
       line-height: 40px;
    }
 }
+
+

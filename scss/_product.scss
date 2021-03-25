@@ -138,14 +138,10 @@
          display: flex;
          align-items: center;
          padding: 10px 46px;
-         &-span {
-            padding-left: 23px;
-            color: $bittersweet;
-         }
+         color: $bittersweet;
          &-svg {
-            path {
+            margin-right: 23px;
                fill: $bittersweet;
-            }
          }
       }
    }

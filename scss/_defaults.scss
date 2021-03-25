@@ -2,6 +2,7 @@
 $white: #ffffff;
 $black: #000000;
 $bittersweet: #f16d7f;
+$bittersweetlight: #e6677893;
 $snow: #fbfbfb;
 $zambezi: #5d5d5d;
 $matterhorn: #575757;
@@ -116,4 +117,9 @@ body {
 
 .main {
    flex-grow: 1;
+}
+
+// Transition for hovers
+.trans {
+   transition: all 0.1s linear;
 }
