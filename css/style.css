@@ -1094,7 +1094,7 @@ body {
 }
 
 .shopping-delivery__adress {
-  min-width: 100%;
+  width: 100%;
   border: 1px solid #a4a4a4;
   padding: 13px 0 16px 18px;
   margin-top: 20px;
@@ -1216,7 +1216,69 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 65px 0 95px;
+  margin: 65px auto 95px;
+}
+
+.registration__form {
+  max-width: 360px;
+}
+
+.registration-form__h5 {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration-form__input {
+  width: 100%;
+  display: inline-block;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding: 13px 0 14px 15px;
+  border: 1px solid #A4A4A4;
+  margin-top: 20px;
+}
+
+.registration-form__label {
+  font-weight: 300;
+  font-size: 11px;
+  text-transform: none;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.registration-form__label-input {
+  margin: 32px 10px 32px 0;
+}
+
+.registration-form__text {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 15px 0 39px;
+}
+
+.registration-form__button {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 17px;
+  color: #ffffff;
+  background: #f16d7f;
+  padding: 15px 28px;
+  border: 1px solid #f16d7f;
+}
+
+.registration-form__button-arrow {
+  margin-left: 20px;
 }
 
 .registration__advantages {
@@ -1232,12 +1294,14 @@ body {
 .registration-advantages__text {
   font-weight: 300;
   font-size: 24px;
+  text-transform: none;
   padding: 22px 0;
 }
 
 .registration-list__item {
   font-weight: 300;
   font-size: 24px;
+  text-transform: none;
   background: url(../img/registration/mark.png) left center no-repeat;
   padding-left: 45px;
   line-height: 40px;
