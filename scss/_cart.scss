@@ -67,7 +67,7 @@
       line-height: 20px;
    }
    &-delivery__adress {
-      min-width: 100%;
+      width: 100%;
       border: 1px solid #a4a4a4;
       padding: 13px 0 16px 18px;
       margin-top: 20px;
@@ -144,7 +144,7 @@
    &__button {
       display: flex;
       justify-content: space-between;
-      max-width: 652px;
+      width: 652px;
       margin-top: 72px;
    }
    &-button__text {
