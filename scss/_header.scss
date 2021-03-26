@@ -42,9 +42,10 @@
       &__text {
          @include fontstyle(semibold, text, upper);
       }
-      &__list{}
-      &__item{
-         &-title{
+      &__list {
+      }
+      &__item {
+         &-title {
             @include fontstyle(regular, text, upper);
             color: $bittersweet;
          }
