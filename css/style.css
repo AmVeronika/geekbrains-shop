@@ -157,12 +157,35 @@ body {
   cursor: pointer;
 }
 
+.header-right__menu {
+  display: inline-block;
+  position: relative;
+}
+
+.header-right__drop {
+  position: absolute;
+  background: #ffffff;
+}
+
 .header-right__burgermenu {
   cursor: pointer;
 }
 
 .header-right__account {
   margin: 0 33px;
+}
+
+.header-drop__text {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header-drop__item-title {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f16d7f;
 }
 
 .promo {
@@ -845,6 +868,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #f7f7f7;
+  padding-bottom: 53px;
 }
 
 .product-preview__description {
@@ -1409,6 +1433,7 @@ body {
     background: #ffffff;
     color: #f16d7f;
   }
+<<<<<<< HEAD
   .button-hover4:hover {
     border: 1px solid #f16d7f;
   }
@@ -1421,6 +1446,15 @@ body {
   .close:hover {
     fill: #f16d7f;
   }
+=======
+  .close:hover {
+    fill: #f16d7f;
+  }
+  .shadow:hover {
+    -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
+  }
+>>>>>>> Adilhan
   .arrow-hover:hover i {
     color: #f16d7f;
   }
@@ -1431,6 +1465,7 @@ body {
     fill: #f16d7f;
     stroke: #f16d7f;
   }
+<<<<<<< HEAD
   .shadow:hover {
     -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
             box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
@@ -1444,4 +1479,6 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+=======
+>>>>>>> Adilhan
 }

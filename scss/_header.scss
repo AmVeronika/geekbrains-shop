@@ -18,11 +18,36 @@
       cursor: pointer;
    }
    // right container
-
-   &-right__burgermenu {
-      cursor: pointer;
+   &-right {
+      &__menu {
+         display: inline-block;
+         position: relative;
+      }
+      &__drop {
+         position: absolute;
+         background: $white;
+      }
+      &__burgermenu {
+         cursor: pointer;
+      }
+      &__account {
+         margin: 0 33px;
+      }
    }
-   &-right__account {
-      margin: 0 33px;
+}
+
+// drop burger-menu
+.header {
+   &-drop {
+      &__text {
+         @include fontstyle(semibold, text, upper);
+      }
+      &__list{}
+      &__item{
+         &-title{
+            @include fontstyle(regular, text, upper);
+            color: $bittersweet;
+         }
+      }
    }
 }
