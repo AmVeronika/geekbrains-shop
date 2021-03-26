@@ -42,6 +42,10 @@
       }
    }
 
+   .menu-title-hover:hover{
+      @include fontstyle(bold, text, upper);
+   }
+
    // Hover for button close
    .close:hover {
       fill: $bittersweet;
