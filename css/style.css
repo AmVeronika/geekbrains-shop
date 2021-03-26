@@ -722,6 +722,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 10;
   position: absolute;
 }
 
