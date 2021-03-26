@@ -123,60 +123,6 @@ body {
   transition: all 0.1s linear;
 }
 
-@media (min-width: 768px) {
-  .input-hover:hover {
-    border: 1px solid #e6677893;
-    background: none;
-  }
-  .input-hover:hover::-webkit-input-placeholder {
-    color: #e6677893;
-  }
-  .input-hover:hover:-ms-input-placeholder {
-    color: #e6677893;
-  }
-  .input-hover:hover::-ms-input-placeholder {
-    color: #e6677893;
-  }
-  .input-hover:hover::placeholder {
-    color: #e6677893;
-  }
-  .input-hover:focus {
-    border: 1px solid #f16d7f;
-  }
-  .button-hover:hover {
-    background: #f16d7f;
-    color: #ffffff;
-  }
-  .button-hover:hover .button-icon {
-    fill: #ffffff;
-  }
-  .button-hover2:hover {
-    border: 1px solid #f16d7f;
-    color: #f16d7f;
-  }
-  .button-hover3:hover {
-    background: #ffffff;
-    color: #f16d7f;
-  }
-  .close:hover {
-    fill: #f16d7f;
-  }
-  .shadow:hover {
-    -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
-            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
-  }
-  .arrow-hover:hover i {
-    color: #f16d7f;
-  }
-  .link-hover:hover {
-    color: #f16d7f;
-  }
-  .item:hover path {
-    fill: #f16d7f;
-    stroke: #f16d7f;
-  }
-}
-
 .header {
   background: #000000;
 }
@@ -211,12 +157,35 @@ body {
   cursor: pointer;
 }
 
+.header-right__menu {
+  display: inline-block;
+  position: relative;
+}
+
+.header-right__drop {
+  position: absolute;
+  background: #ffffff;
+}
+
 .header-right__burgermenu {
   cursor: pointer;
 }
 
 .header-right__account {
   margin: 0 33px;
+}
+
+.header-drop__text {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header-drop__item-title {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f16d7f;
 }
 
 .promo {
@@ -873,6 +842,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #f7f7f7;
+  padding-bottom: 53px;
 }
 
 .product-preview__description {
@@ -1400,4 +1370,58 @@ body {
   line-height: 32px;
   color: #000000;
   background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .input-hover:hover {
+    border: 1px solid #e6677893;
+    background: none;
+  }
+  .input-hover:hover::-webkit-input-placeholder {
+    color: #e6677893;
+  }
+  .input-hover:hover:-ms-input-placeholder {
+    color: #e6677893;
+  }
+  .input-hover:hover::-ms-input-placeholder {
+    color: #e6677893;
+  }
+  .input-hover:hover::placeholder {
+    color: #e6677893;
+  }
+  .input-hover:focus {
+    border: 1px solid #f16d7f;
+  }
+  .button-hover:hover {
+    background: #f16d7f;
+    color: #ffffff;
+  }
+  .button-hover:hover .button-icon {
+    fill: #ffffff;
+  }
+  .button-hover2:hover {
+    border: 1px solid #f16d7f;
+    color: #f16d7f;
+  }
+  .button-hover3:hover {
+    background: #ffffff;
+    color: #f16d7f;
+  }
+  .close:hover {
+    fill: #f16d7f;
+  }
+  .shadow:hover {
+    -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
+  }
+  .arrow-hover:hover i {
+    color: #f16d7f;
+  }
+  .link-hover:hover {
+    color: #f16d7f;
+  }
+  .item:hover path {
+    fill: #f16d7f;
+    stroke: #f16d7f;
+  }
 }
