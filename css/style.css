@@ -1433,7 +1433,6 @@ body {
     background: #ffffff;
     color: #f16d7f;
   }
-<<<<<<< HEAD
   .button-hover4:hover {
     border: 1px solid #f16d7f;
   }
@@ -1446,15 +1445,6 @@ body {
   .close:hover {
     fill: #f16d7f;
   }
-=======
-  .close:hover {
-    fill: #f16d7f;
-  }
-  .shadow:hover {
-    -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
-            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
-  }
->>>>>>> Adilhan
   .arrow-hover:hover i {
     color: #f16d7f;
   }
@@ -1465,7 +1455,6 @@ body {
     fill: #f16d7f;
     stroke: #f16d7f;
   }
-<<<<<<< HEAD
   .shadow:hover {
     -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
             box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.3);
@@ -1479,6 +1468,4 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-=======
->>>>>>> Adilhan
 }
