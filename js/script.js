@@ -21,4 +21,5 @@ filter.addEventListener("click", () => {
    // }
    dropFilter.classList.toggle("openfilter");
    shadow.classList.toggle("activefilter");
+   filter.classList.toggle("filterActive")
 });

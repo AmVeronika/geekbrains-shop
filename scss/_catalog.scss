@@ -124,6 +124,7 @@
       @include fontstyle(regular, text, cap);
       display: block;
       line-height: 26px;
+      background: none;
    }
    &-options {
       &__details {
@@ -191,7 +192,7 @@
    }
 }
 
-// Arrow into pagination  
+// Arrow into pagination
 .fa-chevron-left,
 .fa-chevron-right {
    color: $black;
@@ -200,9 +201,15 @@
 // Active filter
 .activefilter {
    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-   
 }
-// Open filter 
+// Open filter
 .openfilter {
    display: block;
+}
+// Filter active
+.filterActive {
+   color: $bittersweet;
+   .product-filter__link-svg path {
+      fill: $bittersweet;
+   }
 }

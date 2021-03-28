@@ -807,6 +807,7 @@ body {
   text-transform: capitalize;
   display: block;
   line-height: 26px;
+  background: none;
 }
 
 .product-options__details summary::-webkit-details-marker {
@@ -910,6 +911,14 @@ body {
 
 .openfilter {
   display: block;
+}
+
+.filterActive {
+  color: #f16d7f;
+}
+
+.filterActive .product-filter__link-svg path {
+  fill: #f16d7f;
 }
 
 .product__preview {
@@ -1501,10 +1510,12 @@ body {
   .button-hover4:hover {
     border: 1px solid #f16d7f;
   }
-  .button-hover4:hover .card-hover__text, .button-hover4:hover .card-hover__img {
+  .button-hover4:hover .card-hover__text,
+  .button-hover4:hover .card-hover__img {
     color: #f16d7f;
   }
-  .button-hover4:hover .card-hover__text path, .button-hover4:hover .card-hover__img path {
+  .button-hover4:hover .card-hover__text path,
+  .button-hover4:hover .card-hover__img path {
     fill: #f16d7f;
   }
   .button-hover5:hover {
