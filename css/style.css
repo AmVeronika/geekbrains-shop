@@ -32,6 +32,16 @@ aside {
 }
 
 html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 input,
 button,
 textarea {
@@ -109,7 +119,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100vh;
 }
 
 .main {
@@ -1420,7 +1429,7 @@ body {
   grid-gap: 7px;
   -ms-grid-columns: minmax(30px, 1fr) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  max-width: 50%;
+  width: 15%;
   padding: 23px 0;
 }
 
