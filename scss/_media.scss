@@ -46,6 +46,13 @@
          }
       }
    }
+    // Hover for button ver.5
+    .button-hover5:hover {
+      color: $bittersweet;
+      .product-filter__link-svg path {
+      fill: $bittersweet;
+      }
+   }
 
    .menu-title-hover:hover{
       @include fontstyle(bold, text, upper);
@@ -85,5 +92,9 @@
          display: flex;
       }
    }
+   // Hover for checkbox
+   .checkbox-hover:hover {
+      color: $bittersweet;
+   } 
 
 }
