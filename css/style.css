@@ -1112,11 +1112,6 @@ body {
 }
 
 .shopping {
-  margin-top: 96px;
-  margin-bottom: 128px;
-}
-
-.shopping__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,24 +1120,51 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+
+.shopping__wrap {
+  max-width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 25px;
+  margin-bottom: 46px;
 }
 
 .shopping__grid-wrap {
   display: -ms-grid;
   display: grid;
   row-gap: 40px;
-  margin-right: 25px;
+  max-width: 652px;
+  width: 100%;
 }
 
 .shopping__card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 262px 262px 66px;
-      grid-template-columns: 262px 262px 66px;
-  -webkit-column-gap: 31px;
-          column-gap: 31px;
+  -ms-grid-columns: minmax(190px, 262px) minmax(190px, 262px) minmax(60px, 66px);
+      grid-template-columns: minmax(190px, 262px) minmax(190px, 262px) minmax(60px, 66px);
+  -webkit-column-gap: 11px;
+          column-gap: 11px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.shopping-card__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shopping-card__name {
+  margin-left: 20px;
 }
 
 .shopping-name__h3 {
@@ -1180,7 +1202,7 @@ body {
   text-align: end;
   width: 43px;
   height: 24px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   margin-left: 24px;
 }
 
@@ -1193,8 +1215,9 @@ body {
   margin-top: 22px;
 }
 
-.shopping__flex-wrap {
-  width: 360px;
+.shopping__form {
+  max-width: 360px;
+  width: 100%;
   margin-top: 18px;
 }
 
@@ -1300,13 +1323,14 @@ body {
 }
 
 .shopping__button {
+  max-width: 652px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 652px;
   margin-top: 72px;
 }
 
