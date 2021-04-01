@@ -97,6 +97,9 @@
    .checkbox-hover:hover {
       color: $bittersweet;
    }
+   .scale:hover {
+      transform: scale(1.2);
+   }
 }
 
 // Media
@@ -111,10 +114,29 @@
                display: none;
             }
          }
-         &__drop{
+         &__drop {
+            @media (max-width: $level_2) {
+               height: 650px;
+            }
+            @media (max-width: $level_3) {
+               height: 600px;
+            }
             @media (max-width: $level_4) {
                width: 100%;
                height: 100vh;
+            }
+         }
+      }
+      &-drop {
+         &__item-link {
+            @media (max-width: $level_3) {
+               line-height: 32px;
+            }
+         }
+         &__close {
+            @media (max-width: $level_3) {
+               text-align: right;
+               padding: 10px 16px 5px;
             }
          }
       }
@@ -150,10 +172,11 @@
             margin-right: 34px;
          }
          @media (max-width: $level_5) {
-            margin-right: 0;
+            margin-left: 70px;
          }
          @media (max-width: $level_7) and (min-width: $level_8) {
             font-size: 38px;
+            margin-left: 60px;
          }
       }
       &__h1::before {
@@ -200,22 +223,24 @@
          @media (max-width: $level_5) {
             display: flex;
             flex-direction: column;
+            align-items: center;
          }
       }
-      &__card {
-         @media (max-width: $level_5) {
-            height: 300px;
+      &__card1 {
+         @media (max-width: $level_2) and (min-width: $level_3) {
+            width: 251px;
+            height: 260px;
          }
          @media (max-width: $level_7) and (min-width: $level_8) {
-            height: 250px;
+            width: 310px;
          }
       }
       &__card4 {
-         @media (max-width: $level_5) {
-            height: 175px;
+         @media (max-width: $level_5) and (min-width: $level_7) {
+            width: 360px;
          }
          @media (max-width: $level_7) and (min-width: $level_8) {
-            height: 110px;
+            width: 310px;
          }
       }
    }
@@ -228,9 +253,6 @@
          }
       }
       &__grid-wrap {
-         @media (max-width: $level_1) {
-            justify-content: center;
-         }
          @media (max-width: $level_4) {
             gap: 16px;
             margin: 72px auto 33px;
@@ -285,6 +307,9 @@
             align-items: center;
             padding: 53px 15px 140px;
          }
+         @media (max-width: $level_6) {
+            padding: 64px 9px 109px;
+         }
       }
       &__info {
          @media (max-width: $level_2) {
@@ -307,6 +332,16 @@
             padding: 16px 28px 16px 28px;
          }
       }
+      &-info__h4 {
+         @media (max-width: $level_7) and (min-width: $level_8) {
+            font-size: 18px;
+         }
+      }
+      &__h4 {
+         @media (max-width: $level_7) and (min-width: $level_8) {
+            font-size: 14px;
+         }
+      }
    }
    // Footer_wrap
    .footer {
@@ -314,6 +349,11 @@
          @media (max-width: $level_6) {
             flex-direction: column-reverse;
             padding-bottom: 9px;
+         }
+      }
+      &__links {
+         @media (max-width: $level_6) and (min-width: $level_8) {
+            padding: 43px 0 40px;
          }
       }
    }

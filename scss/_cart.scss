@@ -23,8 +23,13 @@
       column-gap: 31px;
       box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
    }
-   &-card__img {
-      width: 100%;
+   &-card {
+      &__img {
+         width: 100%;
+      }
+      &__link {
+         overflow: hidden;
+      }
    }
    &-name__h3 {
       @include fontstyle(regular, h3, cap);
