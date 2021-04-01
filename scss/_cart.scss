@@ -48,7 +48,7 @@
       @include fontstyle(regular, h4, cap);
       line-height: 28px;
       color: #656565;
-      text-align: end;
+      text-align: center;
       width: 43px;
       height: 24px;
       border: 1px solid #eaeaea;
@@ -73,9 +73,13 @@
    &__h5 {
       @include fontstyle(light, h5, upper);
       line-height: 20px;
+      color: #222222;
    }
    &-delivery__adress {
       width: 100%;
+      @include fontstyle(light, none, cap);
+      font-size: 13px;
+      line-height: 16px;
       border: 1px solid #a4a4a4;
       padding: 13px 0 16px 18px;
       margin-top: 20px;
