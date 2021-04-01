@@ -9,7 +9,6 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-right: 25px;
       margin-bottom: 46px;
    }
    &__grid-wrap {
@@ -68,6 +67,7 @@
       max-width: 360px;
       width: 100%;
       margin-top: 18px;
+      margin-left: 25px;
    }
    // Delivery registration
    &__h5 {

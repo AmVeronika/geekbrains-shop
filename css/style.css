@@ -1149,7 +1149,6 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 25px;
   margin-bottom: 46px;
 }
 
@@ -1226,6 +1225,7 @@ body {
   max-width: 360px;
   width: 100%;
   margin-top: 18px;
+  margin-left: 25px;
 }
 
 .shopping__h5 {
@@ -1748,14 +1748,6 @@ body {
   }
 }
 
-@media all and (max-width: 1170px) {
-  .product__grid-wrap {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media all and (max-width: 800px) {
   .product__grid-wrap {
     gap: 16px;
@@ -1827,6 +1819,12 @@ body {
   }
 }
 
+@media all and (max-width: 600px) {
+  .subscribe__wrap {
+    padding: 64px 9px 109px;
+  }
+}
+
 @media all and (max-width: 1000px) {
   .subscribe__info {
     width: 365px;
@@ -1864,5 +1862,60 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding-bottom: 9px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .shopping {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 59px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .shopping__wrap {
+    max-width: 768px;
+    margin-bottom: 64px;
+  }
+}
+
+@media all {
+  .shopping__grid-wrap {
+    width: 100%;
+  }
+  .shopping__card {
+    -ms-grid-columns: 34% 47% 10%;
+        grid-template-columns: 34% 47% 10%;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .shopping__button {
+    max-width: none;
+    margin-top: 62px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .shopping__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    max-width: 768px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .shopping__totalcost {
+    margin-top: 42px;
+    margin-bottom: 20px;
   }
 }
