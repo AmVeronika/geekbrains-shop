@@ -477,11 +477,28 @@
 // Media for CART
 
 @media all {
+   // Media for arrivals
+   .arrivals {
+      @media (max-width: $level_5) {
+         padding: 50px 0 69px;
+      }
+      &__wrap {
+         @media (max-width: $level_5) {
+            justify-content: center;
+         }
+      }
+   }
    // Media for shopping
    .shopping {
       @media (max-width: $level_1) {
          justify-content: center;
          margin-top: 59px;
+      }
+      @media (max-width: $level_5) {
+         margin-top: 39px;
+      }
+      @media (max-width: $level_7) {
+         margin-bottom: 96px;
       }
       &__wrap {
          @media (max-width: $level_1) {
@@ -491,6 +508,7 @@
          @media (max-width: $level_5) {
             max-width: 580px;
             justify-content: center;
+            margin-bottom: 49px;
          }
       }
       // Cards container
@@ -511,10 +529,14 @@
             gap: 17px;
             grid-template-columns: 143px 143px 38px;
          }
+         @media (max-width: $level_7) {
+            grid-template-columns: 143px 154px 27px;
+         }
       }
       &-card__img {
          @media (max-width: $level_5) {
             height: 100%;
+            object-fit: cover;
          }
       }
       &-card__name {
@@ -523,12 +545,17 @@
             margin-top: 13px;
             margin-bottom: 38px;
          }
+         @media (max-width: $level_7) {
+         }
       }
       &-name__h3 {
          @media (max-width: $level_5) {
             margin-bottom: 25px;
             font-size: 16px;
             line-height: 19px;
+         }
+         @media (max-width: $level_7) {
+            margin-bottom: 5px;
          }
       }
       &-card__text {
@@ -554,14 +581,31 @@
             width: 10px;
             height: 11px;
          }
+         @media (max-width: $level_7) {
+            margin-left: 3px;
+         }
       }
 
+      // Buttons cart
       &__button {
          @media (max-width: $level_1) {
             width: 510px;
             margin: 62px auto 0;
          }
+         @media (max-width: $level_5) {
+            width: 358px;
+            margin-top: 30px;
+         }
       }
+      &-button__media {
+         @media (max-width: $level_5) {
+            padding: 8px 36.5px;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: none;
+         }
+      }
+
       // Form container
       &__form {
          @media (max-width: $level_1) {
@@ -571,6 +615,10 @@
             width: 100%;
             max-width: 768px;
             justify-content: space-between;
+         }
+         @media (max-width: $level_6) {
+            flex-wrap: wrap;
+            justify-content: center;
          }
       }
       // Delivery registration
@@ -582,7 +630,21 @@
          @media (max-width: $level_4) {
             margin-right: 15px;
          }
+         @media (max-width: $level_6) {
+            margin-right: 0;
+         }
       }
+      &-delivery__button {
+         @media (max-width: $level_4) {
+            font-size: 11px;
+            line-height: 13px;
+         }
+         @media (max-width: $level_5) {
+            text-transform: none;
+            padding: 10px 22px 10px 22px;
+         }
+      }
+
       // Total cost
       &__totalcost {
          @media (max-width: $level_1) {
@@ -590,6 +652,14 @@
             width: 100%;
             margin-top: 42px;
             margin-bottom: 20px;
+         }
+         @media (max-width: $level_6) {
+            margin-bottom: 0;
+         }
+      }
+      &-totalcost__button {
+         @media (max-width: $level_7) {
+            padding: 14px 6px;
          }
       }
    }

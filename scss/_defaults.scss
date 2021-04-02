@@ -117,8 +117,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   @media (min-width: $level_8) {
-   }
+   min-width: $level_8;
 }
 
 .main {
