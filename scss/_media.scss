@@ -2,6 +2,9 @@
 .trans {
    transition: all 0.1s linear;
 }
+.trans1 {
+   transition: all 0.2s linear;
+}
 .trans2 {
    transition: all 0.5s linear;
 }
@@ -234,10 +237,6 @@
          }
       }
       &__card1 {
-         // @media (max-width: $level_2) and (min-width: $level_3) {
-         //    width: 251px;
-         //    height: 260px;
-         // }
          @media (max-width: $level_7) {
             width: 100%;
             height: 248px;
@@ -379,18 +378,20 @@
 @media all {
    // New arrivals
    .arrivals {
-      @media (max-width: $level_7) {
-         padding: 24px 0 46px;
-      }
       &__wrap {
-         @media (max-width: $level_7) {
+         @media (max-width: $level_6) {
             flex-direction: column;
          }
       }
-      &__h3 {
-         @media (max-width: $level_7) {
+      &__h3--pb {
+         @media (max-width: $level_6) {
             padding-bottom: 32px;
          }
+      }
+   }
+   .main .pb-46 {
+      @media (max-width: $level_6) {
+         padding: 24px 0 46px;
       }
    }
    // Product
@@ -478,14 +479,9 @@
 
 @media all {
    // Media for arrivals
-   .arrivals {
+   .main .pb-69 {
       @media (max-width: $level_5) {
          padding: 50px 0 69px;
-      }
-      &__wrap {
-         @media (max-width: $level_5) {
-            justify-content: center;
-         }
       }
    }
    // Media for shopping
