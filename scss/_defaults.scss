@@ -81,15 +81,6 @@ $texttransform: (
 //    }
 // }
 
-// WIDTH
-$desktopwidth: 1140px;
-
-.container {
-   max-width: $desktopwidth + 30px;
-   margin: 0 auto;
-   padding: 0 15px;
-}
-
 // MEDIA
 $level_0: 1170px;
 $level_1: 1100px;
@@ -99,7 +90,21 @@ $level_4: 800px;
 $level_5: 700px;
 $level_6: 600px;
 $level_7: 450px;
-$level_8: 320px;
+$level_8: 374px;
+
+// WIDTH
+$desktopwidth: 1140px;
+
+.container {
+   max-width: $desktopwidth + 30px;
+   margin: 0 auto;
+   padding: 0 15px;
+   @media (max-width: $level_7){
+      padding: 0 8px;
+   }
+}
+
+
 
 section,
 article,
@@ -114,6 +119,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   min-width: $level_8;
 }
 
 .main {
