@@ -132,65 +132,69 @@
             <!-- Sidebar -->
             <div class="product__sidebar">
                <!-- Filter  -->
-               <div class="product-sidebar__filter" id="shadow">
-                  <button class="product-filter__link button-hover5 trans" id="filter">FILTER
-                     <svg class="product-filter__link-svg" width="15" height="10" viewBox="0 0 15 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path class="trans"
-                           d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
-                           fill="black" />
-                     </svg>
-                  </button>
-                  <!-- Drop filter  -->
-                  <article class="product__details" id="dropFilter">
-                     <details class="product-filter__details">
-                        <summary class="product-details__summary">CATEGORY</summary>
-                        <ul class="product-details__list">
-                           <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
-                        </ul>
-                     </details>
-                     <details class="product-filter__details">
-                        <summary class="product-details__summary">BRAND</summary>
-                        <ul class="product-details__list">
-                           <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
-                        </ul>
-                     </details>
-                     <details class="product-filter__details">
-                        <summary class="product-details__summary">DESIGNER</summary>
-                        <ul class="product-details__list">
-                           <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
-                           <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
-                        </ul>
-                     </details>
-                  </article> <!-- Drop filter end  -->
+               <div class="product-filter__wrap">
+                  <div class="product-sidebar__filter" id="shadow">
+                     <button class="product-filter__link button-hover5 trans" id="filter">
+                        <span class="product-filter__link--span">FILTER</span>
+                        <svg class="product-filter__link-svg" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path class="trans"
+                              d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                              fill="black" />
+                        </svg>
+                     </button>
+                     <!-- Drop filter  -->
+                     <article class="product__details" id="dropFilter">
+                        <details class="product-filter__details">
+                           <summary class="product-details__summary">CATEGORY</summary>
+                           <ul class="product-details__list">
+                              <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
+                           </ul>
+                        </details>
+                        <details class="product-filter__details">
+                           <summary class="product-details__summary">BRAND</summary>
+                           <ul class="product-details__list">
+                              <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
+                           </ul>
+                        </details>
+                        <details class="product-filter__details">
+                           <summary class="product-details__summary">DESIGNER</summary>
+                           <ul class="product-details__list">
+                              <li><a class="product-list__link link-hover trans" href="#">Accessories</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Bags</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Denim</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Hoodies & Sweatshirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Jackets & Coats</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Polos</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shirts</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Shoes</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">Sweaters & Knits</a></li>
+                              <li><a class="product-list__link link-hover trans" href="#">T-Shirts</a></li>
+                           </ul>
+                        </details>
+                     </article> <!-- Drop filter end  -->
 
+                  </div>
                </div>
+
                <!-- Options -->
                <div class="product-sidebar__options">
                   <details class="product-options__details">
@@ -215,17 +219,17 @@
                      </form>
                   </details>
                   <details class="product-options__details">
-                     <summary class="product-options__summary">PRICE</summary>
-                     <form class="product-options__form" action="#" method="get">
+                     <summary class="product-options__summary mr-0">PRICE</summary>
+                     <form class="product-options__form right" action="#" method="get">
                         <label class="product-form__label checkbox-hover trans" for="price"><input
-                              class="product-form__label-input" type="checkbox" name="price" id="price">TREND</label>
+                              class="product-form__label-input" type="checkbox" name="price" id="price">$52.00</label>
                      </form>
                   </details>
                </div>
 
             </div> <!-- Sidebar end -->
 
-            <article class="product__grid-wrap">
+            <article class="product__grid-wrap product__grid-wrap--catalog">
                <!-- Card-1  -->
                <a href="product.html" class="product__card shadow filter-card trans">
                   <img src="img/catalog/product-card1.jpg" width="360" height="420" alt="product card trans"
@@ -403,7 +407,7 @@
                   <!-- Hover for card img END -->
                </a>
                <!-- Card-9  -->
-               <a href="product.html" class="product__card shadow filter-card trans">
+               <a href="product.html" class="product__card product__card--none shadow filter-card trans ">
                   <img src="img/catalog/product-card9.jpg" width="360" height="420" alt="product card"
                      class="product-card__img trans">
                   <div class="product-card__name">
