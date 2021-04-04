@@ -656,3 +656,53 @@
       }
    }
 }
+
+// Media for REGISTRATION
+
+@media all {
+   .registration {
+      @media (max-width: $level_2) {
+         gap: 90px;
+      }
+      @media (max-width: $level_3) {
+         gap: 50px;
+         margin: 40px auto 95px;
+      }
+      @media (max-width: $level_4) {
+         gap: 22px;
+      }
+      @media (max-width: $level_5) {
+         display: flex;
+         flex-direction: column;
+         max-width: 360px;
+      }
+      @media (max-width: $level_6) {
+         align-items: center;
+      }
+      &__form{
+         @media (max-width: $level_5) {
+            margin-bottom: 30px;
+         }
+      }
+      &-advantages {
+         &__h3 {
+            @media (max-width: $level_3) {
+               font-size: 16px;
+            }
+         }
+         &__text {
+            @media (max-width: $level_3) {
+               font-size: 16px;
+               line-height: 19px;
+            }
+         }
+      }
+      &-list__item {
+         @media (max-width: $level_3) {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 13px;
+         }
+      }
+   }
+}
