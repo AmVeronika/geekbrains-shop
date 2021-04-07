@@ -92,12 +92,6 @@
       padding: 13px 0 16px 18px;
       margin-top: 20px;
    }
-   &-delivery__adress-select {
-      @include fontstyle(light, small, upper);
-      line-height: 13px;
-      color: #b1b1b1;
-      cursor: pointer;
-   }
    &-delivery__color {
       color: #222222;
    }

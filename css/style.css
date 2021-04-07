@@ -7,7 +7,6 @@
   border: 0;
 }
 
-
 *,
 *:before,
 *:after {
@@ -53,12 +52,16 @@ input::-ms-clear {
   display: none;
 }
 
-input:not([type=checkbox]):not([type=radio]),
+input:not([type="checkbox"]):not([type="radio"]),
 textarea,
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 button {
@@ -531,6 +534,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.feature .feature-item__svg, .footer .feature-item__svg {
+  z-index: 1;
 }
 
 .feature-item__h4 {
@@ -1434,15 +1441,6 @@ body {
   border: 1px solid #a4a4a4;
   padding: 13px 0 16px 18px;
   margin-top: 20px;
-}
-
-.shopping-delivery__adress-select {
-  font-weight: 300;
-  font-size: 11px;
-  text-transform: uppercase;
-  line-height: 13px;
-  color: #b1b1b1;
-  cursor: pointer;
 }
 
 .shopping-delivery__color {

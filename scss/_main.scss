@@ -156,7 +156,6 @@
 }
 // Style card-hover
 .card-hover {
-
    display: flex;
    opacity: 0;
    justify-content: space-around;
@@ -192,6 +191,9 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+   }
+   .feature-item__svg {
+      z-index: 1;
    }
    &-item__h4 {
       @include fontstyle(semibold, 0, none);
