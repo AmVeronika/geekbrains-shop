@@ -43,6 +43,16 @@ textarea {
 input::-ms-clear {
    display: none;
 }
+// Для iphone 
+input:not([type=checkbox]):not([type=radio]),
+textarea, 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+// Конец
+
 button {
    cursor: pointer;
 }
