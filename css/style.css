@@ -7,7 +7,6 @@
   border: 0;
 }
 
-
 *,
 *:before,
 *:after {
@@ -263,6 +262,11 @@ body {
   text-transform: none;
   color: #6f6e6e;
   line-height: 33px;
+}
+
+.header .burger__media {
+  display: none;
+  line-height: 25px;
 }
 
 .promo {
@@ -1824,6 +1828,12 @@ body {
   }
 }
 
+@media all and (max-width: 600px) {
+  .header .burger__media {
+    display: block;
+  }
+}
+
 @media all and (max-width: 1000px) {
   .promo__wrap {
     min-height: 650px;
@@ -1936,32 +1946,31 @@ body {
   }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 700px) and (min-width: 374px) {
   .categories__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-grid-columns: minmax(310px, 360px);
+        grid-template-columns: minmax(310px, 360px);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
     padding: 0px 15px;
   }
 }
 
 @media all and (max-width: 450px) {
   .categories__card1 {
-    width: 100%;
+    max-width: 360px;
     height: 248px;
   }
 }
 
-@media all and (max-width: 700px) and (min-width: 450px) {
+@media all and (max-width: 700px) {
   .categories__card4 {
-    width: 360px;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
 }
 
@@ -1979,13 +1988,13 @@ body {
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .product__wrap {
     margin-bottom: 65px;
   }
 }
 
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
   .product__grid-wrap {
     gap: 16px;
     margin: 72px auto 33px;
@@ -1995,28 +2004,28 @@ body {
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .product__grid-wrap {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .product-card__img {
     width: 100%;
     height: auto;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .product-card__name {
     -ms-grid-columns: 310px;
         grid-template-columns: 310px;
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .feature__flex-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2029,27 +2038,27 @@ body {
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .feature__item {
     max-width: 360px;
     margin-top: 48px;
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .subscribe {
     background-position: 27% bottom;
   }
 }
 
-@media all and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .subscribe__wrap {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .subscribe__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2062,55 +2071,55 @@ body {
   }
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   .subscribe__wrap {
     padding: 64px 9px 109px;
   }
 }
 
-@media all and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .subscribe__info {
     width: 365px;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .subscribe__info {
     width: 320px;
   }
 }
 
-@media all and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .subscribe__form-wrap {
     margin-right: 0;
   }
 }
 
-@media all and (max-width: 900px) {
+@media (max-width: 900px) {
   .subscribe__form-wrap {
     margin-top: 48px;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .subscribe__input {
     padding: 16px 28px 16px 28px;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .subscribe-info__h4 {
     font-size: 18px;
   }
 }
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   .subscribe__h4 {
     font-size: 14px;
   }
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   .footer__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2120,7 +2129,7 @@ body {
   }
 }
 
-@media all and (max-width: 600px) and (min-width: 374px) {
+@media (max-width: 600px) and (min-width: 374px) {
   .footer__links {
     padding: 43px 0 40px;
   }
