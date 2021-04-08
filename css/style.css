@@ -1351,8 +1351,8 @@ body {
 .shopping__card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 262px 262px 66px;
-      grid-template-columns: 262px 262px 66px;
+  -ms-grid-columns: 35% 5fr 1fr;
+      grid-template-columns: 35% 5fr 1fr;
   -webkit-column-gap: 31px;
           column-gap: 31px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
@@ -1407,9 +1407,7 @@ body {
 }
 
 .shopping-card__close {
-  height: 11px;
-  margin-left: 30px;
-  margin-right: 20px;
+  height: 18px;
   background: none;
   cursor: pointer;
 }
@@ -2310,18 +2308,9 @@ body {
   }
 }
 
-@media all and (max-width: 1100px) {
-  .shopping__card {
-    -ms-grid-columns: 36% 32% 23%;
-        grid-template-columns: 36% 32% 23%;
-  }
-}
-
 @media all and (max-width: 700px) {
   .shopping__card {
     gap: 17px;
-    -ms-grid-columns: 143px 143px 38px;
-        grid-template-columns: 143px 143px 38px;
   }
 }
 
@@ -2377,24 +2366,16 @@ body {
   }
 }
 
-@media all and (max-width: 1100px) {
-  .shopping-card__close {
-    margin: 22px 20px 0 125px;
-  }
-}
-
 @media all and (max-width: 700px) {
   .shopping-card__close {
     margin-top: 13px;
-    margin-left: 10px;
-    width: 10px;
-    height: 11px;
   }
 }
 
-@media all and (max-width: 450px) {
-  .shopping-card__close {
-    margin-left: 3px;
+@media all and (max-width: 600px) {
+  .shopping-card__close-svg {
+    width: 10px;
+    height: 10px;
   }
 }
 
