@@ -185,7 +185,7 @@
          @media (max-width: $level_5) {
             margin-left: 70px;
          }
-         @media (max-width: $level_7) and (min-width: $level_8) {
+         @media (max-width: $level_7)  {
             font-size: 38px;
             margin: 0 auto;
          }
@@ -198,7 +198,7 @@
          @media (max-width: $level_5) {
             height: 82px;
          }
-         @media (max-width: $level_7) and (min-width: $level_8) {
+         @media (max-width: $level_7)  {
             height: 61px;
             top: 0;
          }
@@ -208,7 +208,7 @@
             font-size: 24px;
             line-height: 29px;
          }
-         @media (max-width: $level_7) and (min-width: $level_8) {
+         @media (max-width: $level_7)  {
             font-size: 20px;
             line-height: 24px;
          }
@@ -230,7 +230,7 @@
             margin-top: 20px;
             margin-bottom: 155px;
          }
-         @media (max-width: $level_5) and (min-width: $level_8) {
+         @media (max-width: $level_5) {
             grid-template-columns: minmax(310px, 360px);
             grid-template-rows: auto;
             justify-content: center;
